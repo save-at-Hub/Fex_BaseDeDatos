@@ -1,0 +1,6 @@
+---Use the tables from previous practice adding at least 3 relations.
+use Clinica
+go
+ALTER TABLE Citas
+ADD CONSTRAINT FK_cve_Medico FOREIGN KEY (cve_Medico)
+REFERENCES Medicos(cve_Medico)
